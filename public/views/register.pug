@@ -1,0 +1,22 @@
+extends inicio 
+
+block register   
+    div.container.mt-3
+        div.jumbotron
+            h1(style="color:blue;")!="Registro de Usuario"
+            br
+            form(action="/register" method="post")
+                div.form-group
+                    label(for="nombre") Ingrese su nombre: 
+                    input#nombre_login.form-control(type='text', placeholder='username' name='username' required)
+                div.form-group
+                    label(for="password") Ingrese su contraseña:
+                    input#nombre_login.form-control(type='password', placeholder='password' name='password' required)
+                div.form-group
+                    label(for="direccion") Ingrese su direccion:
+                    input#nombre_login.form-control(type='text', placeholder='direccion' name='direccion' required)
+                button.btn.btn-success.mt-3.mb-1(type="submit") Registrar
+            hr
+            div.text-left
+                button.btn.btn-success.mt-3.mb-5(onclick="location.href = '/login'") Ir a Login
+                

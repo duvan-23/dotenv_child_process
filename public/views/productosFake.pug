@@ -1,0 +1,22 @@
+extends inicio 
+
+block productosFake
+    div.container.mt-3
+        div.jumbotron
+            h2(style="color:blue;")!="Vista de Productos Random"
+            br
+            -if(productos.length)
+                div.table-responsive
+                    table.table.table-dark
+                        tr(style="color:yellow;")
+                            th Nombre
+                            th Precio 
+                            th(style="text-align:center") Foto
+                        each producto in productos
+                            tr
+                                td= producto.nombre
+                                td= producto.precio
+                                td(style="text-align:center")
+                                    img(src=producto.foto)
+            -else
+                h2.alert.alert-warning!="No hay productos"

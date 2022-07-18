@@ -1,0 +1,8 @@
+extends inicio 
+
+block nombre_login
+    div.container.mt-3
+        div.jumbotron.d-flex.justify-content-between.p-4
+            -if(nombre)
+                div.ml-5#login_nombre(style="color:green; font-size:30px;font-weight: bold;")!=`Bienvenido ${nombre}`
+                button#olvidar.btn.btn-success.mr-5(type="button", name="enviar", style="background:orange") Deslogear

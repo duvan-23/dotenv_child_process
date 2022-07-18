@@ -1,0 +1,17 @@
+extends inicio 
+
+block info
+    div.container.mt-3
+        div.jumbotron
+            div.row
+                div.col-md-6.offset-md-3.mb-4
+                    h1.text-center(style="color:blue;")!="INFORMACIÓN"
+                -if(datos.length)
+                    div.col-md-8
+                        h3.text-left(style="color:black; margin-bottom:16px;margin-left:15px;")!=`Argumentos de entrada: ${datos[0]}`
+                        h3.text-left(style="color:black; margin-bottom:16px;margin-left:15px;")!=`Nombre de la plataforma: ${datos[5]}`
+                        h3.text-left(style="color:black; margin-bottom:16px;margin-left:15px;")!=`Versión de node.js: ${datos[6]}`
+                        h3.text-left(style="color:black; margin-bottom:16px;margin-left:15px;")!=`Memoria total reservada Rss: ${datos[4]}`
+                        h3.text-left(style="color:black; margin-bottom:16px;margin-left:15px;")!=`Path de ejecución: ${datos[1]}`
+                        h3.text-left(style="color:black; margin-bottom:16px;margin-left:15px;")!=`Process Id: ${datos[2]}`
+                        h3.text-left(style="color:black; margin-bottom:16px;margin-left:15px;")!=`Carpeta: ${datos[3]}`

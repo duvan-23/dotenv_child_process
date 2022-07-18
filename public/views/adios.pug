@@ -1,0 +1,8 @@
+extends inicio 
+
+block adios
+    div.container.mt-3
+        div.jumbotron.d-flex.justify-content-between.p-4
+            -if(nombre)
+                div.ml-5#login_nombre(style="color:green; font-size:30px;font-weight: bold;")!=`Hasta luego ${nombre}`
+    script(src='../salir.js')

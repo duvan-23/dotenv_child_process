@@ -1,0 +1,19 @@
+extends nombre_login 
+
+block formulario   
+    div.container.mt-3
+        div.jumbotron
+            h1(style="color:blue;")!="Ingrese Productos"
+            br
+            form(onsubmit="return addProducto(this)" autocomplete='off')
+                div.form-group
+                    label(for="nombre") Nombre: 
+                    input#nombre.form-control(type='text', placeholder='nombre' name='nombre' required)
+                div.form-group
+                    label(for="precio") Precio: 
+                    input#precio.form-control(type='number', placeholder='precio' name='precio' required)
+                div.form-group
+                    label(for="foto") Foto Url: 
+                    input#foto.form-control(type='text', placeholder='https://cdn2.iconfinder.com/data/icons/leto-blue-big-data/64/big_data-30-128.png' name='foto' required)
+                button.btn.btn-success.mt-3.mb-5(type="submit", name="enviar") Guardar Producto
+            div#products

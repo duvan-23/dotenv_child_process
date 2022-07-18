@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "Carro",
+    "precio": 10000000,
+    "foto": "https://cdn-icons-png.flaticon.com/512/2554/2554969.png",
+    "id": 1
+  },
+  {
+    "nombre": "Moto",
+    "precio": 2000000,
+    "foto": "https://cdn-icons-png.flaticon.com/512/27/27176.png",
+    "id": 2
+  },
+  {
+    "nombre": "Barco",
+    "precio": 78000000,
+    "foto": "https://cdn-icons-png.flaticon.com/512/840/840081.png",
+    "id": 3
+  },
+  {
+    "nombre": "d",
+    "precio": "12",
+    "foto": "https://cdn-icons-png.flaticon.com/512/2554/2554969.png",
+    "id": 4
+  },
+  {
+    "nombre": "cc",
+    "precio": "123",
+    "foto": "https://cdn-icons-png.flaticon.com/512/27/27176.png",
+    "id": 5
+  },
+  {
+    "nombre": "Casa",
+    "precio": "120000",
+    "foto": "https://cdn-icons-png.flaticon.com/512/2554/2554969.png",
+    "id": 6
+  },
+  {
+    "nombre": "Moto",
+    "precio": "2300000",
+    "foto": "https://cdn-icons-png.flaticon.com/512/27/27176.png",
+    "id": 7
+  }
+]

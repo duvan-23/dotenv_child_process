@@ -1,0 +1,31 @@
+extends formulario 
+
+block mensajes
+    div.container.mt-3
+        div.jumbotron
+            div.row
+                div.col-md-6.offset-md-3
+                    h1.text-center(style="color:blue;")!="Centro de Mensajes"
+                    h1#porcentaje.text-center(style="color:blue;")
+                    br
+                    form.form( onsubmit="return addMessage(this)" autocomplete='off')
+                        p Correo electrónico:
+                            input.form-control.my-2.mr-2(type="email" id="email" placeholder="juan@hotmail.com" required)
+                            input.form-control.my-2.mr-2(type="text" id="nombre1" placeholder="Juan" required)
+                            input.form-control.my-2.mr-2(type="text" id="apellido" placeholder="Mendez" required)
+                            input.form-control.my-2.mr-2(type="number" id="edad" placeholder="10" required)
+                            input.form-control.my-2.mr-2(type="text" id="alias" placeholder="juanito" required)
+                            input.form-control.my-2.mr-2(type="url" id="avatar" placeholder="Url del avatar" required)
+                        br
+                        hr
+                        div#messages
+                        br
+                        p(style="margin-bottom: 0rem;")!="Mensaje:"
+                        di.input-group.mb-3
+                            input.form-control.my-2.mr-2(type="text" id="text" placeholder="Ingrese un mensaje.." required)
+                            div.input-group-prepend
+                                input#envioMensaje.btn.btn-primary.my-2(type="submit" value="Enviar!")
+
+    script(src='../main.js')
+    script(src='../login.js')
+                    
