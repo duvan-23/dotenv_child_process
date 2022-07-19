@@ -1,34 +1,16 @@
 const calculo = (num) => {
-    let numeros=[];
+    let numeros={};
     let limite=num;
     for (let index = 0; index < limite; index++) {
-        numeros.push(random_num(1000));
-        
-    }
-    let unicosEl= [];
-    let almacenrepetidos=[];
-    let contador = 1;
-    numeros= numeros.sort();
-    
-    for (let i = 0; i < numeros.length; i++) {
-        if(numeros[i+1]==numeros[i]){
-            contador=contador+1;
+        let num = random_num(1000);
+        if (!numeros[num]){
+            numeros[num]=1;
         }else{
-            unicosEl.push(numeros[i]);
-            almacenrepetidos.push(contador);
-            contador = 1;
+            numeros[num]++;
         }
         
     }
-    let final=[];
-    let obj={};
-    for (let j = 0; j < unicosEl.length; j++) {
-        obj[unicosEl[j]]=almacenrepetidos[j];
-        final.push(obj);
-        obj={};
-    }
-
-    return final;
+    return numeros;
     
 }
 function random_num(max){
